@@ -1,0 +1,13 @@
+C:\work\git\Debug\net5.0-windows\SDRSharp.Plugin.NoiseBlanker.deps.json
+C:\work\git\Debug\net5.0-windows\SDRSharp.Plugin.NoiseBlanker.dll
+C:\work\git\Debug\net5.0-windows\ref\SDRSharp.Plugin.NoiseBlanker.dll
+C:\work\git\Debug\net5.0-windows\SDRSharp.Plugin.NoiseBlanker.pdb
+C:\work\git\NoiseBlanker\obj\Debug\net5.0-windows\SDRSharp.Plugin.NoiseBlanker.csproj.AssemblyReference.cache
+C:\work\git\NoiseBlanker\obj\Debug\net5.0-windows\SDRSharp.Plugin.NoiseBlanker.ProcessorPanel.resources
+C:\work\git\NoiseBlanker\obj\Debug\net5.0-windows\SDRSharp.Plugin.NoiseBlanker.csproj.GenerateResource.cache
+C:\work\git\NoiseBlanker\obj\Debug\net5.0-windows\SDRSharp.Plugin.NoiseBlanker.GeneratedMSBuildEditorConfig.editorconfig
+C:\work\git\NoiseBlanker\obj\Debug\net5.0-windows\SDRSharp.Plugin.NoiseBlanker.csproj.CoreCompileInputs.cache
+C:\work\git\NoiseBlanker\obj\Debug\net5.0-windows\SDRSharp.Plugin.NoiseBlanker.csproj.CopyComplete
+C:\work\git\NoiseBlanker\obj\Debug\net5.0-windows\SDRSharp.Plugin.NoiseBlanker.dll
+C:\work\git\NoiseBlanker\obj\Debug\net5.0-windows\ref\SDRSharp.Plugin.NoiseBlanker.dll
+C:\work\git\NoiseBlanker\obj\Debug\net5.0-windows\SDRSharp.Plugin.NoiseBlanker.pdb

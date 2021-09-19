@@ -1,0 +1,62 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <OutputType>Library</OutputType>
+    <Platforms>AnyCPU</Platforms>
+    <UseWindowsForms>true</UseWindowsForms>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <OutputPath>C:\hamsat\sdrsharp-x86-1822\Plugins\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>..\Release\</OutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <COMReference Include="OmniRig">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>4fe359c5-a58f-459d-be95-ca559fb4f270</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="SDRSharp.Common">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\SDRSharp.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SDRSharp.PanView">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\SDRSharp.PanView.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SDRSharp.Radio">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\SDRSharp.Radio.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="RigControlPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="RigControlPanel.Designer.cs">
+      <DependentUpon>RigControlPanel.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="RigControlPanel.resx">
+      <DependentUpon>RigControlPanel.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Windows.Compatibility" Version="5.0.1" />
+    <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+  </ItemGroup>
+</Project>

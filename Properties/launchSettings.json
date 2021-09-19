@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "newProfile1": {
+      "commandName": "Executable",
+      "executablePath": "C:\\hamsat\\sdrsharp-x86-1822\\SDRSharp.exe",
+      "workingDirectory": "C:\\hamsat\\sdrsharp-x86-1822\\"
+    }
+  }
+}
