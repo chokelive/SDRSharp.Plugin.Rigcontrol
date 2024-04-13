@@ -1,4 +1,4 @@
-# SDRSharp.Plugin.EigControl
+# SDRSharp.Plugin.RigControl
 Plugin to connect SDRSharp to Control Radio frequency and Mode
 
 ![Screenshot](https://github.com/chokelive/SDRSharp.Plugin.Rigcontrol/assets/17312564/0de3a343-0874-4f75-bc73-29f07e8e3ad6)
