@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/t3KhomEcwDGmCro7/mAscP4Pjyk7ppQ+THLynbaT28XIsj0cmEtOkJ5tdp5WIiaC4GvQ3SiowSUT62l+bnVXw==",
+  "dgSpecHash": "q15y70ETcH84BED487IzS3QtLpX9EaH0xfVOwZjQd9mevs5ulSUVEwTDPf/4ej2I+Jg613bL5zc2nMFID6Bmjg==",
   "success": true,
-  "projectFilePath": "C:\\work\\git\\NoiseBlanker\\SDRSharp.Plugin.RigControl.csproj",
+  "projectFilePath": "C:\\work\\git\\SDRSharp.Plugin.RigControl\\SDRSharp.Plugin.RigControl.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\choke\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "C:\\Users\\choke\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",

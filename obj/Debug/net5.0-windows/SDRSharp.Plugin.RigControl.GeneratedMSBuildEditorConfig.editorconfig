@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = SDRSharp.Plugin.RigControl
-build_property.ProjectDir = C:\work\git\NoiseBlanker\
+build_property.ProjectDir = C:\work\git\SDRSharp.Plugin.RigControl\

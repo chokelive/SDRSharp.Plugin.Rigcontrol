@@ -7,5 +7,5 @@ using System.Runtime.Versioning;
 [assembly: AssemblyProduct("SDR# Studio")]
 [assembly: AssemblyCopyright("Copyright © E29AHU 2021")]
 [assembly: AssemblyCompany("E29AHU")]
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion("1.1.0.0")]
+[assembly: AssemblyFileVersion("1.1.0.0")]

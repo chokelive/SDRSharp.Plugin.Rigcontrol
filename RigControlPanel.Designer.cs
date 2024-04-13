@@ -42,6 +42,8 @@ namespace SDRSharp.Plugin.RigControl
             this.lblMode = new System.Windows.Forms.Label();
             this.lblVersion = new System.Windows.Forms.Label();
             this.bb_omniRigConfig = new System.Windows.Forms.Button();
+            this.chkSyncRigToSdr = new System.Windows.Forms.CheckBox();
+            this.chkSyncdrToRig = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // chkEnable
@@ -103,7 +105,7 @@ namespace SDRSharp.Plugin.RigControl
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(50, 129);
+            this.label5.Location = new System.Drawing.Point(49, 177);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(89, 15);
             this.label5.TabIndex = 6;
@@ -148,7 +150,7 @@ namespace SDRSharp.Plugin.RigControl
             // lblVersion
             // 
             this.lblVersion.AutoSize = true;
-            this.lblVersion.Location = new System.Drawing.Point(6, 129);
+            this.lblVersion.Location = new System.Drawing.Point(5, 177);
             this.lblVersion.Name = "lblVersion";
             this.lblVersion.Size = new System.Drawing.Size(38, 15);
             this.lblVersion.TabIndex = 11;
@@ -156,7 +158,7 @@ namespace SDRSharp.Plugin.RigControl
             // 
             // bb_omniRigConfig
             // 
-            this.bb_omniRigConfig.Location = new System.Drawing.Point(4, 101);
+            this.bb_omniRigConfig.Location = new System.Drawing.Point(3, 149);
             this.bb_omniRigConfig.Name = "bb_omniRigConfig";
             this.bb_omniRigConfig.Size = new System.Drawing.Size(103, 25);
             this.bb_omniRigConfig.TabIndex = 12;
@@ -164,10 +166,38 @@ namespace SDRSharp.Plugin.RigControl
             this.bb_omniRigConfig.UseVisualStyleBackColor = true;
             this.bb_omniRigConfig.Click += new System.EventHandler(this.bb_omniRigConfig_Click);
             // 
+            // chkSyncRigToSdr
+            // 
+            this.chkSyncRigToSdr.AutoSize = true;
+            this.chkSyncRigToSdr.Checked = true;
+            this.chkSyncRigToSdr.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkSyncRigToSdr.Location = new System.Drawing.Point(5, 101);
+            this.chkSyncRigToSdr.Name = "chkSyncRigToSdr";
+            this.chkSyncRigToSdr.Size = new System.Drawing.Size(109, 19);
+            this.chkSyncRigToSdr.TabIndex = 13;
+            this.chkSyncRigToSdr.Text = "Sync Rig to SDR";
+            this.chkSyncRigToSdr.UseVisualStyleBackColor = true;
+            this.chkSyncRigToSdr.CheckedChanged += new System.EventHandler(this.chkSyncRigToSdr_CheckedChanged);
+            // 
+            // chkSyncdrToRig
+            // 
+            this.chkSyncdrToRig.AutoSize = true;
+            this.chkSyncdrToRig.Checked = true;
+            this.chkSyncdrToRig.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkSyncdrToRig.Location = new System.Drawing.Point(5, 122);
+            this.chkSyncdrToRig.Name = "chkSyncdrToRig";
+            this.chkSyncdrToRig.Size = new System.Drawing.Size(109, 19);
+            this.chkSyncdrToRig.TabIndex = 14;
+            this.chkSyncdrToRig.Text = "Sync SDR to Rig";
+            this.chkSyncdrToRig.UseVisualStyleBackColor = true;
+            this.chkSyncdrToRig.CheckedChanged += new System.EventHandler(this.chkSyncdrToRig_CheckedChanged);
+            // 
             // RigControlPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.chkSyncdrToRig);
+            this.Controls.Add(this.chkSyncRigToSdr);
             this.Controls.Add(this.bb_omniRigConfig);
             this.Controls.Add(this.lblVersion);
             this.Controls.Add(this.lblMode);
@@ -182,7 +212,8 @@ namespace SDRSharp.Plugin.RigControl
             this.Controls.Add(this.cbRig);
             this.Controls.Add(this.chkEnable);
             this.Name = "RigControlPanel";
-            this.Size = new System.Drawing.Size(174, 153);
+            this.Size = new System.Drawing.Size(174, 202);
+            this.Load += new System.EventHandler(this.RigControlPanel_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -203,5 +234,7 @@ namespace SDRSharp.Plugin.RigControl
         private System.Windows.Forms.Label lblMode;
         private System.Windows.Forms.Label lblVersion;
         private System.Windows.Forms.Button bb_omniRigConfig;
+        private System.Windows.Forms.CheckBox chkSyncRigToSdr;
+        private System.Windows.Forms.CheckBox chkSyncdrToRig;
     }
 }

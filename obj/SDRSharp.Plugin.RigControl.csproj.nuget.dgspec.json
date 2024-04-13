@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\work\\git\\NoiseBlanker\\SDRSharp.Plugin.RigControl.csproj": {}
+    "C:\\work\\git\\SDRSharp.Plugin.RigControl\\SDRSharp.Plugin.RigControl.csproj": {}
   },
   "projects": {
-    "C:\\work\\git\\NoiseBlanker\\SDRSharp.Plugin.RigControl.csproj": {
+    "C:\\work\\git\\SDRSharp.Plugin.RigControl\\SDRSharp.Plugin.RigControl.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\work\\git\\NoiseBlanker\\SDRSharp.Plugin.RigControl.csproj",
+        "projectUniqueName": "C:\\work\\git\\SDRSharp.Plugin.RigControl\\SDRSharp.Plugin.RigControl.csproj",
         "projectName": "SDRSharp.Plugin.RigControl",
-        "projectPath": "C:\\work\\git\\NoiseBlanker\\SDRSharp.Plugin.RigControl.csproj",
+        "projectPath": "C:\\work\\git\\SDRSharp.Plugin.RigControl\\SDRSharp.Plugin.RigControl.csproj",
         "packagesPath": "C:\\Users\\choke\\.nuget\\packages\\",
-        "outputPath": "C:\\work\\git\\NoiseBlanker\\obj\\",
+        "outputPath": "C:\\work\\git\\SDRSharp.Plugin.RigControl\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\choke\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -67,7 +67,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
         }
       }
     }

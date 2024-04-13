@@ -33,6 +33,26 @@ namespace SDRSharp.Plugin.RigControl
             lblStatus.Text = "";
             lblFrequency.Text = "";
             lblMode.Text = "";
+
+
+            if (chkSyncRigToSdr.Checked)
+            {
+                _process.rigInfo.syncRigToSDROption = true;
+            }
+            else
+            {
+                _process.rigInfo.syncRigToSDROption = false;
+            }
+
+            if (chkSyncdrToRig.Checked)
+            {
+                _process.rigInfo.syncSDRToRigOption = true;
+            }
+            else
+            {
+                _process.rigInfo.syncSDRToRigOption = false;
+            }
+
         }
 
         private void bb_omniRigConfig_Click(object sender, EventArgs e)
@@ -61,9 +81,33 @@ namespace SDRSharp.Plugin.RigControl
             }
         }
 
-        
+        private void chkSyncRigToSdr_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkSyncRigToSdr.Checked)
+            {
+                _process.rigInfo.syncRigToSDROption = true;
+            }
+            else
+            {
+                _process.rigInfo.syncRigToSDROption = false;
+            }
+        }
 
+        private void chkSyncdrToRig_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkSyncdrToRig.Checked)
+            {
+                _process.rigInfo.syncSDRToRigOption = true;
+            }
+            else
+            {
+                _process.rigInfo.syncSDRToRigOption = false;
+            }
+        }
 
-        
+        private void RigControlPanel_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
