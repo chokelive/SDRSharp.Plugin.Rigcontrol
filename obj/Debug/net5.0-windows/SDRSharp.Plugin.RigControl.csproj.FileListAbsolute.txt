@@ -13,7 +13,6 @@ C:\work\git\NoiseBlanker\obj\Debug\net5.0-windows\ref\SDRSharp.Plugin.RigControl
 C:\work\git\NoiseBlanker\obj\Debug\net5.0-windows\SDRSharp.Plugin.RigControl.pdb
 C:\hamsat\sdrsharp-x86-1822\Plugins\net5.0-windows\SDRSharp.Plugin.RigControl.deps.json
 C:\hamsat\sdrsharp-x86-1822\Plugins\net5.0-windows\SDRSharp.Plugin.RigControl.dll
-C:\hamsat\sdrsharp-x86-1822\Plugins\net5.0-windows\ref\SDRSharp.Plugin.RigControl.dll
 C:\hamsat\sdrsharp-x86-1822\Plugins\net5.0-windows\SDRSharp.Plugin.RigControl.pdb
 C:\work\git\NoiseBlanker\obj\Debug\net5.0-windows\Interop.OmniRig.dll
 C:\work\git\NoiseBlanker\obj\Debug\net5.0-windows\SDRSharp.Plugin.RigControl.csproj.ResolveComReference.cache
@@ -28,3 +27,16 @@ C:\work\git\SDRSharp.Plugin.RigControl\obj\Debug\net5.0-windows\ref\SDRSharp.Plu
 C:\work\git\SDRSharp.Plugin.RigControl\obj\Debug\net5.0-windows\SDRSharp.Plugin.RigControl.pdb
 C:\work\git\SDRSharp.Plugin.RigControl\obj\Debug\net5.0-windows\SDRSharp.Plugin.RigControl.csproj.CopyComplete
 C:\work\git\SDRSharp.Plugin.RigControl\obj\Debug\net5.0-windows\SDRSharp.Plugin.RigControl.csproj.AssemblyReference.cache
+C:\Users\Aleksey\source\repos\SDRSharp.Plugin.Rigcontrol\obj\Debug\net5.0-windows\SDRSharp.Plugin.RigControl.csproj.AssemblyReference.cache
+C:\Users\Aleksey\source\repos\SDRSharp.Plugin.Rigcontrol\obj\Debug\net5.0-windows\Interop.OmniRig.dll
+C:\Users\Aleksey\source\repos\SDRSharp.Plugin.Rigcontrol\obj\Debug\net5.0-windows\SDRSharp.Plugin.RigControl.csproj.ResolveComReference.cache
+C:\Users\Aleksey\source\repos\SDRSharp.Plugin.Rigcontrol\obj\Debug\net5.0-windows\SDRSharp.Plugin.RigControl.RigControlPanel.resources
+C:\Users\Aleksey\source\repos\SDRSharp.Plugin.Rigcontrol\obj\Debug\net5.0-windows\SDRSharp.Plugin.RigControl.csproj.GenerateResource.cache
+C:\Users\Aleksey\source\repos\SDRSharp.Plugin.Rigcontrol\obj\Debug\net5.0-windows\SDRSharp.Plugin.RigControl.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aleksey\source\repos\SDRSharp.Plugin.Rigcontrol\obj\Debug\net5.0-windows\SDRSharp.Plugin.RigControl.csproj.CoreCompileInputs.cache
+C:\Users\Aleksey\source\repos\SDRSharp.Plugin.Rigcontrol\obj\Debug\net5.0-windows\SDRSharp.Plugin.RigControl.sourcelink.json
+C:\Users\Aleksey\source\repos\SDRSharp.Plugin.Rigcontrol\obj\Debug\net5.0-windows\SDRSharp.485CA810.Up2Date
+C:\Users\Aleksey\source\repos\SDRSharp.Plugin.Rigcontrol\obj\Debug\net5.0-windows\SDRSharp.Plugin.RigControl.dll
+C:\Users\Aleksey\source\repos\SDRSharp.Plugin.Rigcontrol\obj\Debug\net5.0-windows\refint\SDRSharp.Plugin.RigControl.dll
+C:\Users\Aleksey\source\repos\SDRSharp.Plugin.Rigcontrol\obj\Debug\net5.0-windows\SDRSharp.Plugin.RigControl.pdb
+C:\Users\Aleksey\source\repos\SDRSharp.Plugin.Rigcontrol\obj\Debug\net5.0-windows\ref\SDRSharp.Plugin.RigControl.dll

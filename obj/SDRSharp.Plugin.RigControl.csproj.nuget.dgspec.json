@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\work\\git\\SDRSharp.Plugin.RigControl\\SDRSharp.Plugin.RigControl.csproj": {}
+    "C:\\Users\\Aleksey\\source\\repos\\SDRSharp.Plugin.Rigcontrol\\SDRSharp.Plugin.RigControl.csproj": {}
   },
   "projects": {
-    "C:\\work\\git\\SDRSharp.Plugin.RigControl\\SDRSharp.Plugin.RigControl.csproj": {
+    "C:\\Users\\Aleksey\\source\\repos\\SDRSharp.Plugin.Rigcontrol\\SDRSharp.Plugin.RigControl.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\work\\git\\SDRSharp.Plugin.RigControl\\SDRSharp.Plugin.RigControl.csproj",
+        "projectUniqueName": "C:\\Users\\Aleksey\\source\\repos\\SDRSharp.Plugin.Rigcontrol\\SDRSharp.Plugin.RigControl.csproj",
         "projectName": "SDRSharp.Plugin.RigControl",
-        "projectPath": "C:\\work\\git\\SDRSharp.Plugin.RigControl\\SDRSharp.Plugin.RigControl.csproj",
-        "packagesPath": "C:\\Users\\choke\\.nuget\\packages\\",
-        "outputPath": "C:\\work\\git\\SDRSharp.Plugin.RigControl\\obj\\",
+        "projectPath": "C:\\Users\\Aleksey\\source\\repos\\SDRSharp.Plugin.Rigcontrol\\SDRSharp.Plugin.RigControl.csproj",
+        "packagesPath": "C:\\Users\\Aleksey\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Aleksey\\source\\repos\\SDRSharp.Plugin.Rigcontrol\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\choke\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Aleksey\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0-windows7.0"
+          "net5.0-windows"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -34,6 +34,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -55,7 +60,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -67,7 +73,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

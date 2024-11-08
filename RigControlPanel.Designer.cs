@@ -29,194 +29,204 @@ namespace SDRSharp.Plugin.RigControl
         /// </summary>
         private void InitializeComponent()
         {
-            this.chkEnable = new System.Windows.Forms.CheckBox();
-            this.cbRig = new System.Windows.Forms.ComboBox();
-            this.Label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.lblRigName = new System.Windows.Forms.Label();
-            this.lblStatus = new System.Windows.Forms.Label();
-            this.lblFrequency = new System.Windows.Forms.Label();
-            this.lblMode = new System.Windows.Forms.Label();
-            this.lblVersion = new System.Windows.Forms.Label();
-            this.bb_omniRigConfig = new System.Windows.Forms.Button();
-            this.chkSyncRigToSdr = new System.Windows.Forms.CheckBox();
-            this.chkSyncdrToRig = new System.Windows.Forms.CheckBox();
-            this.SuspendLayout();
+            chkEnable = new System.Windows.Forms.CheckBox();
+            cbRig = new System.Windows.Forms.ComboBox();
+            Label1 = new System.Windows.Forms.Label();
+            label2 = new System.Windows.Forms.Label();
+            label3 = new System.Windows.Forms.Label();
+            label4 = new System.Windows.Forms.Label();
+            label5 = new System.Windows.Forms.Label();
+            lblRigName = new System.Windows.Forms.Label();
+            lblStatus = new System.Windows.Forms.Label();
+            lblFrequency = new System.Windows.Forms.Label();
+            lblMode = new System.Windows.Forms.Label();
+            lblVersion = new System.Windows.Forms.Label();
+            bb_omniRigConfig = new System.Windows.Forms.Button();
+            chkSyncRigToSdr = new System.Windows.Forms.CheckBox();
+            chkSyncdrToRig = new System.Windows.Forms.CheckBox();
+            label6 = new System.Windows.Forms.Label();
+            SuspendLayout();
             // 
             // chkEnable
             // 
-            this.chkEnable.AutoSize = true;
-            this.chkEnable.Location = new System.Drawing.Point(93, 5);
-            this.chkEnable.Name = "chkEnable";
-            this.chkEnable.Size = new System.Drawing.Size(61, 19);
-            this.chkEnable.TabIndex = 0;
-            this.chkEnable.Text = "Enable";
-            this.chkEnable.UseVisualStyleBackColor = true;
-            this.chkEnable.CheckedChanged += new System.EventHandler(this.chkEnable_CheckedChanged);
+            chkEnable.AutoSize = true;
+            chkEnable.Location = new System.Drawing.Point(93, 5);
+            chkEnable.Name = "chkEnable";
+            chkEnable.Size = new System.Drawing.Size(61, 19);
+            chkEnable.TabIndex = 0;
+            chkEnable.Text = "Enable";
+            chkEnable.UseVisualStyleBackColor = true;
+            chkEnable.CheckedChanged += chkEnable_CheckedChanged;
             // 
             // cbRig
             // 
-            this.cbRig.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbRig.FormattingEnabled = true;
-            this.cbRig.Location = new System.Drawing.Point(4, 3);
-            this.cbRig.Name = "cbRig";
-            this.cbRig.Size = new System.Drawing.Size(69, 23);
-            this.cbRig.TabIndex = 1;
+            cbRig.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            cbRig.FormattingEnabled = true;
+            cbRig.Location = new System.Drawing.Point(4, 3);
+            cbRig.Name = "cbRig";
+            cbRig.Size = new System.Drawing.Size(69, 23);
+            cbRig.TabIndex = 1;
             // 
             // Label1
             // 
-            this.Label1.AutoSize = true;
-            this.Label1.Location = new System.Drawing.Point(3, 32);
-            this.Label1.Name = "Label1";
-            this.Label1.Size = new System.Drawing.Size(56, 15);
-            this.Label1.TabIndex = 2;
-            this.Label1.Text = "RigName";
+            Label1.AutoSize = true;
+            Label1.Location = new System.Drawing.Point(3, 32);
+            Label1.Name = "Label1";
+            Label1.Size = new System.Drawing.Size(56, 15);
+            Label1.TabIndex = 2;
+            Label1.Text = "RigName";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 49);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(39, 15);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Status";
+            label2.AutoSize = true;
+            label2.Location = new System.Drawing.Point(3, 49);
+            label2.Name = "label2";
+            label2.Size = new System.Drawing.Size(39, 15);
+            label2.TabIndex = 3;
+            label2.Text = "Status";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 64);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 15);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Frequency";
+            label3.AutoSize = true;
+            label3.Location = new System.Drawing.Point(3, 64);
+            label3.Name = "label3";
+            label3.Size = new System.Drawing.Size(62, 15);
+            label3.TabIndex = 4;
+            label3.Text = "Frequency";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(3, 82);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(38, 15);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Mode";
+            label4.AutoSize = true;
+            label4.Location = new System.Drawing.Point(3, 82);
+            label4.Name = "label4";
+            label4.Size = new System.Drawing.Size(38, 15);
+            label4.TabIndex = 5;
+            label4.Text = "Mode";
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(49, 177);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(89, 15);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Dev by E29AHU";
+            label5.AutoSize = true;
+            label5.Location = new System.Drawing.Point(49, 186);
+            label5.Name = "label5";
+            label5.Size = new System.Drawing.Size(89, 15);
+            label5.TabIndex = 6;
+            label5.Text = "Dev by E29AHU";
             // 
             // lblRigName
             // 
-            this.lblRigName.AutoSize = true;
-            this.lblRigName.Location = new System.Drawing.Point(96, 34);
-            this.lblRigName.Name = "lblRigName";
-            this.lblRigName.Size = new System.Drawing.Size(38, 15);
-            this.lblRigName.TabIndex = 7;
-            this.lblRigName.Text = "label6";
+            lblRigName.AutoSize = true;
+            lblRigName.Location = new System.Drawing.Point(96, 34);
+            lblRigName.Name = "lblRigName";
+            lblRigName.Size = new System.Drawing.Size(38, 15);
+            lblRigName.TabIndex = 7;
+            lblRigName.Text = "label6";
             // 
             // lblStatus
             // 
-            this.lblStatus.AutoSize = true;
-            this.lblStatus.Location = new System.Drawing.Point(96, 49);
-            this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(38, 15);
-            this.lblStatus.TabIndex = 8;
-            this.lblStatus.Text = "label7";
+            lblStatus.AutoSize = true;
+            lblStatus.Location = new System.Drawing.Point(96, 49);
+            lblStatus.Name = "lblStatus";
+            lblStatus.Size = new System.Drawing.Size(38, 15);
+            lblStatus.TabIndex = 8;
+            lblStatus.Text = "label7";
             // 
             // lblFrequency
             // 
-            this.lblFrequency.AutoSize = true;
-            this.lblFrequency.Location = new System.Drawing.Point(96, 64);
-            this.lblFrequency.Name = "lblFrequency";
-            this.lblFrequency.Size = new System.Drawing.Size(38, 15);
-            this.lblFrequency.TabIndex = 9;
-            this.lblFrequency.Text = "label8";
+            lblFrequency.AutoSize = true;
+            lblFrequency.Location = new System.Drawing.Point(96, 64);
+            lblFrequency.Name = "lblFrequency";
+            lblFrequency.Size = new System.Drawing.Size(38, 15);
+            lblFrequency.TabIndex = 9;
+            lblFrequency.Text = "label8";
             // 
             // lblMode
             // 
-            this.lblMode.AutoSize = true;
-            this.lblMode.Location = new System.Drawing.Point(96, 82);
-            this.lblMode.Name = "lblMode";
-            this.lblMode.Size = new System.Drawing.Size(38, 15);
-            this.lblMode.TabIndex = 10;
-            this.lblMode.Text = "label9";
+            lblMode.AutoSize = true;
+            lblMode.Location = new System.Drawing.Point(96, 82);
+            lblMode.Name = "lblMode";
+            lblMode.Size = new System.Drawing.Size(38, 15);
+            lblMode.TabIndex = 10;
+            lblMode.Text = "label9";
             // 
             // lblVersion
             // 
-            this.lblVersion.AutoSize = true;
-            this.lblVersion.Location = new System.Drawing.Point(5, 177);
-            this.lblVersion.Name = "lblVersion";
-            this.lblVersion.Size = new System.Drawing.Size(38, 15);
-            this.lblVersion.TabIndex = 11;
-            this.lblVersion.Text = "label6";
+            lblVersion.AutoSize = true;
+            lblVersion.Location = new System.Drawing.Point(5, 186);
+            lblVersion.Name = "lblVersion";
+            lblVersion.Size = new System.Drawing.Size(38, 15);
+            lblVersion.TabIndex = 11;
+            lblVersion.Text = "label6";
             // 
             // bb_omniRigConfig
             // 
-            this.bb_omniRigConfig.Location = new System.Drawing.Point(3, 149);
-            this.bb_omniRigConfig.Name = "bb_omniRigConfig";
-            this.bb_omniRigConfig.Size = new System.Drawing.Size(103, 25);
-            this.bb_omniRigConfig.TabIndex = 12;
-            this.bb_omniRigConfig.Text = "OmniRig Config";
-            this.bb_omniRigConfig.UseVisualStyleBackColor = true;
-            this.bb_omniRigConfig.Click += new System.EventHandler(this.bb_omniRigConfig_Click);
+            bb_omniRigConfig.Location = new System.Drawing.Point(3, 147);
+            bb_omniRigConfig.Name = "bb_omniRigConfig";
+            bb_omniRigConfig.Size = new System.Drawing.Size(103, 25);
+            bb_omniRigConfig.TabIndex = 12;
+            bb_omniRigConfig.Text = "OmniRig Config";
+            bb_omniRigConfig.UseVisualStyleBackColor = true;
+            bb_omniRigConfig.Click += bb_omniRigConfig_Click;
             // 
             // chkSyncRigToSdr
             // 
-            this.chkSyncRigToSdr.AutoSize = true;
-            this.chkSyncRigToSdr.Checked = true;
-            this.chkSyncRigToSdr.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkSyncRigToSdr.Location = new System.Drawing.Point(5, 101);
-            this.chkSyncRigToSdr.Name = "chkSyncRigToSdr";
-            this.chkSyncRigToSdr.Size = new System.Drawing.Size(109, 19);
-            this.chkSyncRigToSdr.TabIndex = 13;
-            this.chkSyncRigToSdr.Text = "Sync Rig to SDR";
-            this.chkSyncRigToSdr.UseVisualStyleBackColor = true;
-            this.chkSyncRigToSdr.CheckedChanged += new System.EventHandler(this.chkSyncRigToSdr_CheckedChanged);
+            chkSyncRigToSdr.AutoSize = true;
+            chkSyncRigToSdr.Checked = true;
+            chkSyncRigToSdr.CheckState = System.Windows.Forms.CheckState.Checked;
+            chkSyncRigToSdr.Location = new System.Drawing.Point(5, 101);
+            chkSyncRigToSdr.Name = "chkSyncRigToSdr";
+            chkSyncRigToSdr.Size = new System.Drawing.Size(109, 19);
+            chkSyncRigToSdr.TabIndex = 13;
+            chkSyncRigToSdr.Text = "Sync Rig to SDR";
+            chkSyncRigToSdr.UseVisualStyleBackColor = true;
+            chkSyncRigToSdr.CheckedChanged += chkSyncRigToSdr_CheckedChanged;
             // 
             // chkSyncdrToRig
             // 
-            this.chkSyncdrToRig.AutoSize = true;
-            this.chkSyncdrToRig.Checked = true;
-            this.chkSyncdrToRig.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkSyncdrToRig.Location = new System.Drawing.Point(5, 122);
-            this.chkSyncdrToRig.Name = "chkSyncdrToRig";
-            this.chkSyncdrToRig.Size = new System.Drawing.Size(109, 19);
-            this.chkSyncdrToRig.TabIndex = 14;
-            this.chkSyncdrToRig.Text = "Sync SDR to Rig";
-            this.chkSyncdrToRig.UseVisualStyleBackColor = true;
-            this.chkSyncdrToRig.CheckedChanged += new System.EventHandler(this.chkSyncdrToRig_CheckedChanged);
+            chkSyncdrToRig.AutoSize = true;
+            chkSyncdrToRig.Checked = true;
+            chkSyncdrToRig.CheckState = System.Windows.Forms.CheckState.Checked;
+            chkSyncdrToRig.Location = new System.Drawing.Point(5, 122);
+            chkSyncdrToRig.Name = "chkSyncdrToRig";
+            chkSyncdrToRig.Size = new System.Drawing.Size(109, 19);
+            chkSyncdrToRig.TabIndex = 14;
+            chkSyncdrToRig.Text = "Sync SDR to Rig";
+            chkSyncdrToRig.UseVisualStyleBackColor = true;
+            chkSyncdrToRig.CheckedChanged += chkSyncdrToRig_CheckedChanged;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new System.Drawing.Point(5, 201);
+            label6.Name = "label6";
+            label6.Size = new System.Drawing.Size(137, 15);
+            label6.TabIndex = 16;
+            label6.Text = "LO sync by Magalex2x14";
             // 
             // RigControlPanel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.chkSyncdrToRig);
-            this.Controls.Add(this.chkSyncRigToSdr);
-            this.Controls.Add(this.bb_omniRigConfig);
-            this.Controls.Add(this.lblVersion);
-            this.Controls.Add(this.lblMode);
-            this.Controls.Add(this.lblFrequency);
-            this.Controls.Add(this.lblStatus);
-            this.Controls.Add(this.lblRigName);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.Label1);
-            this.Controls.Add(this.cbRig);
-            this.Controls.Add(this.chkEnable);
-            this.Name = "RigControlPanel";
-            this.Size = new System.Drawing.Size(174, 202);
-            this.Load += new System.EventHandler(this.RigControlPanel_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            Controls.Add(label6);
+            Controls.Add(chkSyncdrToRig);
+            Controls.Add(chkSyncRigToSdr);
+            Controls.Add(bb_omniRigConfig);
+            Controls.Add(lblVersion);
+            Controls.Add(lblMode);
+            Controls.Add(lblFrequency);
+            Controls.Add(lblStatus);
+            Controls.Add(lblRigName);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(Label1);
+            Controls.Add(cbRig);
+            Controls.Add(chkEnable);
+            Name = "RigControlPanel";
+            Size = new System.Drawing.Size(174, 221);
+            Load += RigControlPanel_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -236,5 +246,6 @@ namespace SDRSharp.Plugin.RigControl
         private System.Windows.Forms.Button bb_omniRigConfig;
         private System.Windows.Forms.CheckBox chkSyncRigToSdr;
         private System.Windows.Forms.CheckBox chkSyncdrToRig;
+        private System.Windows.Forms.Label label6;
     }
 }

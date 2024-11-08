@@ -1,9 +1,7 @@
-﻿using SDRSharp.Common;
-using SDRSharp.Plugin.RigControl;
-using SDRSharp.Radio;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
+using SDRSharp.Common;
 
-namespace SDRSharp.Plugin.NoiseBlanker
+namespace SDRSharp.Plugin.RigControl
 {
     public class RigControlPlugin : ISharpPlugin, ICanLazyLoadGui
     {
@@ -27,13 +25,13 @@ namespace SDRSharp.Plugin.NoiseBlanker
             }
         }
 
-   
+
         public void Initialize(ISharpControl control)
         {
             _control = control;
             _process = new RigControlProcess(_control); // load Rig Control Plugin
 
-            
+
         }
 
         public void Close()
@@ -49,5 +47,5 @@ namespace SDRSharp.Plugin.NoiseBlanker
             }
         }
     }
-    
+
 }

@@ -15,6 +15,9 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Remove="NoiseBlankerProcessor.cs" />
+  </ItemGroup>
+  <ItemGroup>
     <COMReference Include="OmniRig">
       <WrapperTool>tlbimp</WrapperTool>
       <VersionMinor>0</VersionMinor>

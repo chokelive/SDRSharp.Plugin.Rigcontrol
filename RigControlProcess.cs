@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using OmniRig;
 using System.Timers;
+using OmniRig;
 using SDRSharp.Common;
 
 namespace SDRSharp.Plugin.RigControl
@@ -13,7 +9,7 @@ namespace SDRSharp.Plugin.RigControl
     {
         public int frequency { get; set; }
         public string mode { get; set; }
-        public string  status { get; set; }
+        public string status { get; set; }
         public string rigName { get; set; }
         public bool syncRigToSDROption { get; set; }
         public bool syncSDRToRigOption { get; set; }
@@ -57,7 +53,7 @@ namespace SDRSharp.Plugin.RigControl
             {
                 rig = omniRig.Rig1;
             }
-            else if(rigSelect == "Rig2")
+            else if (rigSelect == "Rig2")
             {
                 rig = omniRig.Rig2;
             }
@@ -78,16 +74,17 @@ namespace SDRSharp.Plugin.RigControl
             rigInfo.frequency = rig.FreqA;
             rigInfo.mode = Convert.ToString(translateModeRigToSDR(rig.Mode));
             rigInfo.rigName = rig.RigType;
-            
+
             // Rig to SDR sync
             if (rigInfo.syncRigToSDROption == true)
             {
                 //Sync Frequency
                 long setFrequency;
-                bool syncFreqStatus = syncRigToSDR(_control.Frequency, rig.FreqA, RigPrevFreq, out setFrequency);
+                bool syncFreqStatus = syncRigToSDR(_control.CenterFrequency, rig.FreqA, RigPrevFreq, out setFrequency);
                 if (syncFreqStatus == true) // check SDR frequency chang
                 {
-                    _control.Frequency = setFrequency;
+
+                    _control.CenterFrequency = setFrequency;
                 }
 
                 // Sync Mode
@@ -98,8 +95,8 @@ namespace SDRSharp.Plugin.RigControl
                     _control.DetectorType = setMode;
                 }
 
-                
-                
+
+
             }
 
             // SDR to Radio sync
@@ -108,11 +105,11 @@ namespace SDRSharp.Plugin.RigControl
 
                 // Sync Frequency
                 long setFrequency;
-                bool syncFreqStatus = syncSDRToRig(_control.Frequency, rig.FreqA, SdrPrevFreq, out setFrequency);
+                bool syncFreqStatus = syncSDRToRig(_control.CenterFrequency, rig.FreqA, SdrPrevFreq, out setFrequency);
                 if (syncFreqStatus == true)
                 {
                     rig.FreqA = Convert.ToInt32(setFrequency);
-                    
+
                 }
 
                 // Sync Mode
@@ -123,16 +120,11 @@ namespace SDRSharp.Plugin.RigControl
                     rig.Mode = setMode;
                 }
 
-                
-                
-
-                
-                
             }
 
             //  save frequency for next round caculate
             RigPrevFreq = rig.FreqA;
-            SdrPrevFreq = _control.Frequency;
+            SdrPrevFreq = _control.CenterFrequency; ;
 
             RigPrevMode = rig.Mode;
             SdrPrevMode = _control.DetectorType;
@@ -249,7 +241,7 @@ namespace SDRSharp.Plugin.RigControl
         // Translate RigMode from Rig to SDR mode
         private Radio.DetectorType translateModeRigToSDR(RigParamX mode)
         {
-            Radio.DetectorType  ret= Radio.DetectorType.USB; // default mode
+            Radio.DetectorType ret = Radio.DetectorType.USB; // default mode
             switch (mode)
             {
                 case RigParamX.PM_AM:

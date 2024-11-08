@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>SDRSharp.Plugin.RigControl</id>
+    <version>1.0.0</version>
+    <authors>SDRSharp.Plugin.RigControl</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="7ee287682b050ca3930f5eb370a328a063a72a1e" />
+    <dependencies>
+      <group targetFramework="net5.0-windows7.0">
+        <dependency id="Microsoft.Windows.Compatibility" version="5.0.1" exclude="Build,Analyzers" />
+        <dependency id="System.Data.DataSetExtensions" version="4.5.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net5.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WindowsForms" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="C:\hamsat\sdrsharp-x86-1822\Plugins\net5.0-windows\SDRSharp.Plugin.RigControl.dll" target="lib\net5.0-windows7.0\SDRSharp.Plugin.RigControl.dll" />
+  </files>
+</package>

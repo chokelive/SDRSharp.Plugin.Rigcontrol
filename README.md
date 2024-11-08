@@ -9,9 +9,14 @@ Plugin to connect SDRSharp to Control Radio frequency and Mode
 ## install
 * Require SDRSharp v1.0.0.1822 or above and .NET 5 Desktop x86 Runtime
 * Require Omninirig Libary and Radio config http://dxatlas.com/omnirig/
-* Copy the SDRSharp.GpredictConnector.dll into SDRSharp Plugins directory.
-* add the "magic line" to your plugins.xml file
+* For old SDR# versions:
+  * copy the SDRSharp.Plugin.RigControl.dll into SDRSharp Plugins directory
+  * add the "magic line" to your plugins.xml file
 
          <add key="Rig Control" value="SDRSharp.Plugin.RigControl.RigControlPlugin,SDRSharp.Plugin.RigControl" />
+
+* For newer SDR# versions with automatic plugins discovery:
+  * create RigControl subdirectory inside SDRSharp Plugins directory
+  * place SDRSharp.Plugin.RigControl.dll there
 
 73 E29AHU
